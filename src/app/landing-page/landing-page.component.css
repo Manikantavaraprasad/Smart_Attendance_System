@@ -1,0 +1,27 @@
+@keyframes dynamicBackground {
+    0% { background-color: #00bcd4; }
+    25% { background-color: #4caf50; }
+    50% { background-color: #ffeb3b; }
+    75% { background-color: #f44336; }
+    100% { background-color: #00bcd4; }
+  }
+  
+  .dynamic-body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 20px;
+    background: linear-gradient(45deg, #00bcd4, #f44336, #ffeb3b, #4caf50);
+    background-size: 400% 400%;
+    animation: dynamicBackground 10s ease infinite;
+    color: white;
+    text-align: center;
+  }
+  
+  .content-box {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
